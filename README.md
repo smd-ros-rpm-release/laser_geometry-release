@@ -1,3 +1,22 @@
+## laser_geomtery - 1.5.11-0
+
+User `dgossow@lex` released the packages in the `laser_geomtery` repository by running `/usr/bin/bloom-release laser_geomtery --track hydro --rosdistro hydro` on `Mon, 01 Jul 2013 18:33:26 -0000`
+
+The `laser_geometry` package was released.
+
+Version of package(s) in repository `laser_geomtery`:
+- rosdistro version: `null`
+- old version: `1.5.10-0`
+- new version: `1.5.11-0`
+
+Versions of tools used:
+- bloom version: `0.4.2`
+- catkin_pkg version: `0.1.16`
+- rosdep version: `0.10.19`
+- rosdistro version: `0.2.9`
+- vcstools version: `0.1.26`
+
+
 ## laser_geometry - 1.5.10-0
 
 User `dgossow@lex` released the packages in the `laser_geometry` repository by running `/usr/bin/bloom-release laser_geometry --track convert --rosdistro groovy` on `Fri, 28 Jun 2013 22:11:08 -0000`
