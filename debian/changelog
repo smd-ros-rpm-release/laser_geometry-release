@@ -1,0 +1,74 @@
+ros-hydro-laser-geometry (1.5.14-0precise) precise; urgency=high
+
+  * Treat max_range as invalid measurement
+  * Properly propagate range_cutoff
+  * check for CATKIN_ENABLE_TESTING
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Mon, 04 Nov 2013 08:00:00 -0000
+
+ros-hydro-laser-geometry (1.5.13-0precise) precise; urgency=high
+
+  * fixes #3 <https://github.com/ros-perception/laser_geometry/issues/3>
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Sun, 06 Oct 2013 07:00:00 -0000
+
+ros-hydro-laser-geometry (1.5.12-0precise) precise; urgency=high
+
+  * fix case of Eigen find_package name
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Sat, 14 Sep 2013 07:00:00 -0000
+
+ros-hydro-laser-geometry (1.5.11-0precise) precise; urgency=high
+
+  * added missing run deps
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Mon, 01 Jul 2013 07:00:00 -0000
+
+ros-hydro-laser-geometry (1.5.10-0precise) precise; urgency=high
+
+  * [bugfix] export boost and eigen via DEPENDS
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Fri, 28 Jun 2013 22:09:00 -0000
+
+ros-hydro-laser-geometry (1.5.9-0precise) precise; urgency=high
+
+  * [bugfix] export boost and eigen include dirs
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Fri, 28 Jun 2013 18:38:00 -0000
+
+ros-hydro-laser-geometry (1.5.8-0precise) precise; urgency=high
+
+  * Added buildtool_depend on catkin
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Fri, 14 Dec 2012 21:54:00 -0000
+
+ros-hydro-laser-geometry (1.5.7-0precise) precise; urgency=high
+
+  * CMake clean up
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Fri, 14 Dec 2012 21:48:00 -0000
+
+ros-hydro-laser-geometry (1.5.6-0precise) precise; urgency=high
+
+  * Removed vestigial manifest.xml
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Mon, 10 Dec 2012 08:00:00 -0000
+
+ros-hydro-laser-geometry (1.5.5-0precise) precise; urgency=high
+
+  * Added .count field (of 1) to every PointCloud2 field description.
+    This fixes the bug referred to here: http://dev.pointclouds.org/issues/821 which is useful because that fix in PCL
+    seems not to be released yet.
+    Also this way is more correct, as far as I can tell.
+  * Tidied up CMakeLists.txt based on Dirk's recommendations.
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Thu, 15 Nov 2012 08:00:00 -0000
+
+ros-hydro-laser-geometry (1.5.4-0precise) precise; urgency=high
+
+  * added install rules to CMakeLists.txt needed for catkinization.
+  * catkinized
+
+ -- Dave Hershberger <hersh@willowgarage.com>  Wed, 10 Oct 2012 07:00:00 -0000
+
+
