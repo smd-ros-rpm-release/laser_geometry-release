@@ -1,5 +1,24 @@
 ## laser_geometry - 1.5.14-0
 
+User `hersh@frogs` released the packages in the `laser_geometry` repository by running `/usr/bin/bloom-release laser_geometry --track groovy --rosdistro groovy --edit` on `Fri, 08 Nov 2013 17:22:44 -0000`
+
+The `laser_geometry` package was released.
+
+Version of package(s) in repository `laser_geometry`:
+- rosdistro version: `1.5.10-0`
+- old version: `null`
+- new version: `1.5.14-0`
+
+Versions of tools used:
+- bloom version: `0.4.4`
+- catkin_pkg version: `0.1.21`
+- rosdep version: `0.10.22`
+- rosdistro version: `0.2.14`
+- vcstools version: `0.1.31`
+
+
+## laser_geometry - 1.5.14-0
+
 User `hersh@frogs` released the packages in the `laser_geometry` repository by running `/usr/bin/bloom-release laser_geometry --track hydro --rosdistro hydro` on `Mon, 04 Nov 2013 22:34:35 -0000`
 
 The `laser_geometry` package was released.
