@@ -2,6 +2,15 @@
 Changelog for package laser_geometry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.6.0 (2014-02-21)
+------------------
+* Adding William Woodall as a co-maintainer
+* Contributors: Vincent Rabaud, William Woodall
+
+1.5.15 (2013-12-02)
+-------------------
+* Fix mistake in end_time calculation for scan transformation in #6
+
 1.5.14 (2013-11-04)
 -------------------
 * Treat max_range as invalid measurement
