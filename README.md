@@ -1,3 +1,22 @@
+## laser_geometry (indigo) - 1.6.0-0
+
+User `william@dosa` released the packages in the `laser_geometry` repository into the `indigo` distro by running `/usr/local/bin/bloom-release -r indigo -t indigo -n laser_geometry` on `Fri, 21 Feb 2014 19:13:34 -0000`
+
+The `laser_geometry` package was released.
+
+Version of package(s) in repository `laser_geometry`:
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.6.0-0`
+
+Versions of tools used:
+- bloom version: `0.4.9`
+- catkin_pkg version: `0.1.26`
+- rosdep version: `0.10.25`
+- rosdistro version: `0.3.3`
+- vcstools version: `0.1.33`
+
+
 ## laser_geometry - 1.5.14-0
 
 User `hersh@frogs` released the packages in the `laser_geometry` repository by running `/usr/bin/bloom-release laser_geometry --track groovy --rosdistro groovy --edit` on `Fri, 08 Nov 2013 17:22:44 -0000`
