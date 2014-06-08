@@ -1,18 +1,14 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(laser_geometry)
+find_package(catkin REQUIRED sensor_msgs roscpp tf angles)
 
-find_package(catkin REQUIRED
-    COMPONENTS
-        angles
-        cmake_modules
-        roscpp
-        sensor_msgs
-        tf
-)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-find_package(Boost REQUIRED COMPONENTS system thread)
+find_package(Boost REQUIRED COMPONENTS thread)
 
 find_package(Eigen REQUIRED)
+
+catkin_python_setup()
 
 catkin_package(
   INCLUDE_DIRS include
@@ -20,11 +16,8 @@ catkin_package(
   DEPENDS Boost Eigen
 )
 
-include_directories(include
-    ${catkin_INCLUDE_DIRS}
-    ${Boost_INCLUDE_DIRS}
-    ${Eigen_INCLUDE_DIRS}
-)
+include_directories(SYSTEM ${Boost_INCLUDE_DIRS} ${EIGEN_INCLUDE_DIRS})
+include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_library(laser_geometry src/laser_geometry.cpp)
 target_link_libraries(laser_geometry ${Boost_LIBRARIES} ${tf_LIBRARIES})
@@ -32,6 +25,8 @@ target_link_libraries(laser_geometry ${Boost_LIBRARIES} ${tf_LIBRARIES})
 if(CATKIN_ENABLE_TESTING)
   catkin_add_gtest(projection_test test/projection_test.cpp)
   target_link_libraries(projection_test laser_geometry)
+
+  catkin_add_nosetests(test/projection_test.py)
 endif()
 
 install(TARGETS laser_geometry

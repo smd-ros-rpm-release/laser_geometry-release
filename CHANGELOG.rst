@@ -2,15 +2,14 @@
 Changelog for package laser_geometry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.6.1 (2014-02-23)
-------------------
-* Added dependency on cmake_modules
-* Contributors: William Woodall
-
-1.6.0 (2014-02-21)
-------------------
-* Adding William Woodall as a co-maintainer
-* Contributors: Vincent Rabaud, William Woodall
+1.5.16 (2014-06-08)
+-------------------
+* allows to have range_cutoff > range_max
+  NOTE this is required if we need to keep the range_max readings
+  in the point cloud.
+  An example application is an obstacle_layer in a costmap.
+* adds python port (only simple projection)
+* Contributors: Vincent Rabaud, enriquefernandez
 
 1.5.15 (2013-12-02)
 -------------------
