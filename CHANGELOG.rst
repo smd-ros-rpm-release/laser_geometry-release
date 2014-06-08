@@ -2,6 +2,19 @@
 Changelog for package laser_geometry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.5.16 (2014-06-08)
+-------------------
+* allows to have range_cutoff > range_max
+  NOTE this is required if we need to keep the range_max readings
+  in the point cloud.
+  An example application is an obstacle_layer in a costmap.
+* adds python port (only simple projection)
+* Contributors: Vincent Rabaud, enriquefernandez
+
+1.5.15 (2013-12-02)
+-------------------
+* Fix mistake in end_time calculation for scan transformation in #6
+
 1.5.14 (2013-11-04)
 -------------------
 * Treat max_range as invalid measurement
